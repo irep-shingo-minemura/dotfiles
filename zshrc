@@ -30,7 +30,7 @@ export PATH="$PATH:/usr/local/bin/go"
 export GOPATH="$HOME/go"
 
 # Google Cloud SDK
-source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
+# source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
 
 # Pipenv
 export PIPENV_VENV_IN_PROJECT=1
