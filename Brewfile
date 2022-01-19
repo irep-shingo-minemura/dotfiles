@@ -1,6 +1,8 @@
+tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
+tap "homebrew/core"
 brew "awscli"
 # brew "go"
 # brew "graphviz"
@@ -29,4 +31,3 @@ cask "spectacle"
 #cask "tableplus"
 
 #cask "visual-studio-code"
-cask "box-tools"
