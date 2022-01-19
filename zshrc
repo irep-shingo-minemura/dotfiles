@@ -42,8 +42,8 @@ fi
 export PATH="/usr/local/opt/mysql-client/bin:$PATH"
 
 # Node.js(nodenv)
-# export PATH="$HOME/.nodenv/bin:$PATH"
-# eval "$(nodenv init -)"
+export PATH="$HOME/.nodenv/bin:$PATH"
+eval "$(nodenv init -)"
 
 #### FIG ENV VARIABLES ####
 # Please make sure this block is at the end of this file.
