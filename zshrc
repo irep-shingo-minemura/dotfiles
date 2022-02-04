@@ -26,24 +26,26 @@ if [ $ITERM_SESSION_ID ]; then
 fi
 
 # Go
-export PATH="$PATH:/usr/local/bin/go"
-export GOPATH="$HOME/go"
+# export PATH="$PATH:/usr/local/bin/go"
+# export GOPATH="$HOME/go"
 
 # Google Cloud SDK
 # source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
 
 # Pipenv
-export PIPENV_VENV_IN_PROJECT=1
+# export PIPENV_VENV_IN_PROJECT=1
 
 # pyenv
-if command -v pyenv 1>/dev/null 2>&1; then
-  eval "$(pyenv init -)"
-fi
-export PATH="/usr/local/opt/mysql-client/bin:$PATH"
+# if command -v pyenv 1>/dev/null 2>&1; then
+#   eval "$(pyenv init -)"
+# fi
+# export PATH="/usr/local/opt/mysql-client/bin:$PATH"
 
 # Node.js(nodenv)
-export PATH="$HOME/.nodenv/bin:$PATH"
-eval "$(nodenv init -)"
+if "$REMOTE_CONTAINERS" = "false"; then
+  export PATH="$HOME/.nodenv/bin:$PATH"
+  eval "$(nodenv init -)"
+fi
 
 #### FIG ENV VARIABLES ####
 # Please make sure this block is at the end of this file.
