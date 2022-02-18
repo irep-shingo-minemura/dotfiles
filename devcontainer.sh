@@ -1,7 +1,8 @@
 cd $(dirname $0)
 
 for name in *; do
-    [ "$name" != "config/starship.toml" ] && continue
+    [ "$name" = "config/git"* ] && continue
+    [ "$name" = "config/karabiner"* ] && continue
     [ "$name" = ".gitignore" ] && continue
     [ "$name" = ".gitmodules" ] && continue
     [ "$name" = "Brewfile" ] && continue
