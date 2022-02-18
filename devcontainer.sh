@@ -13,6 +13,7 @@ for name in *; do
     [ "$name" = ".DS_Store" ] && continue
 
     target="$HOME/.$name"
+    rm $target
     ln -s "$PWD/$name" "$target"
 done
 
