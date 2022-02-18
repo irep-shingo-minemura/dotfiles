@@ -12,6 +12,7 @@ for name in *; do
     [ "$name" = "README.md" ] && continue
     [ "$name" = ".DS_Store" ] && continue
 
+    target="$HOME/.$name"
     ln -s "$PWD/$name" "$target"
 done
 
