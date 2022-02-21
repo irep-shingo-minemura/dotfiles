@@ -18,3 +18,5 @@ for name in *; do
 done
 
 curl -s "https://starship.rs/install.sh" | sh -s -- -y
+
+export STARSHIP_CONFIG=~/dotfiles/config/starship.toml
