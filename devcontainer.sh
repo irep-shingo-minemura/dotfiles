@@ -19,4 +19,5 @@ done
 
 curl -s "https://starship.rs/install.sh" | sh -s -- -y
 
-export STARSHIP_CONFIG=~/dotfiles/config/starship.toml
+# 上の処理だと.configディレクトリが存在してコピーできないため応急処置
+cp config/starship.toml ~/.config/starship.toml
