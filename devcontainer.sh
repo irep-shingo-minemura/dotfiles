@@ -18,3 +18,6 @@ for name in *; do
 done
 
 curl -s "https://starship.rs/install.sh" | sh -s -- -y
+
+# 上の処理だと.configディレクトリが存在してコピーできないため応急処置
+cp config/starship.toml ~/.config/starship.toml
