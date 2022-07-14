@@ -1,7 +1,8 @@
 command_timeout = 1000
 
 [aws]
-disabled = true
+format = '[(on $symbol$profile )(\[$duration\] )]($style)'
+force_display = true
 
 [gcloud]
 disabled = true
