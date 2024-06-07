@@ -1,5 +1,3 @@
-# Fig pre block. Keep at the top of this file.
-. "$HOME/.fig/shell/zshrc.pre.zsh"
 #
 # Executes commands at the start of an interactive session.
 #
@@ -7,13 +5,28 @@
 #   Sorin Ionescu <sorin.ionescu@gmail.com>
 #
 
+# zshrcをコンパイルする
+if [ ~/.zshrc -nt ~/.zshrc.zwc ]; then
+  zcompile ~/.zshrc
+fi
+
+# Starship
+# eval "$(starship init zsh)"
+
+# Node.js(nodenv)
+eval "$(nodenv init -)"
+
+# inshellisenseを起動したときに下記のエラーを回避する
+# /var/folders/ws/nsbp36rs4b3_gj4055d_tg_w0000gq/T/is-zsh/.zshrc:58: command not found: add-zsh-hook
+# autoload -Uz add-zsh-hook
+
+# inshellisense
+inshellisense
+
 # Source Prezto.
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
-
-# Starship
-eval "$(starship init zsh)"
 
 # ウィンドウタイトルにカレントディレクトリパスを表示する
 if [ $ITERM_SESSION_ID ]; then
@@ -22,9 +35,8 @@ if [ $ITERM_SESSION_ID ]; then
   }
 fi
 
-# Go
-export PATH="$PATH:/usr/local/bin/go"
-export GOPATH="$HOME/go"
+# SSHのパスフレーズをキーチェーンに保存する
+ssh-add --apple-use-keychain ~/.ssh/id_ed25519
 
 # Google Cloud SDK
 # source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
@@ -36,11 +48,10 @@ export PIPENV_VENV_IN_PROJECT=1
 if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
 fi
+
+# MySQL
 export PATH="/usr/local/opt/mysql-client/bin:$PATH"
 
-# Node.js(nodenv)
-export PATH="$HOME/.nodenv/bin:$PATH"
-eval "$(nodenv init -)"
-
-# Fig post block. Keep at the bottom of this file.
-. "$HOME/.fig/shell/zshrc.post.zsh"
+# export NVM_DIR="$HOME/.nvm"
+#   [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+#   [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
