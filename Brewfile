@@ -3,7 +3,7 @@ tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
 tap "hashicorp/tap"
 
-brew "awscli"
+# brew "awscli"
 brew "awsume"
 brew "gh"
 brew "jq"
