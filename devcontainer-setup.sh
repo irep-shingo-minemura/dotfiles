@@ -1,4 +1,4 @@
-#!/bin/shell
+#!/bin/sh
 
 # inshellisense
 npm install -g @microsoft/inshellisense
