@@ -20,8 +20,15 @@ eval "$(nodenv init -)"
 # /var/folders/ws/nsbp36rs4b3_gj4055d_tg_w0000gq/T/is-zsh/.zshrc:58: command not found: add-zsh-hook
 # autoload -Uz add-zsh-hook
 
-# inshellisense
-inshellisense
+# ---------------- inshellisense shell plugin ----------------
+if [[ -z "${ISTERM}" && $- = *i* && $- != *c* ]]; then
+  if [[ -o login ]]; then
+    is -s zsh ; exit
+    # is -s zsh --login ; exit
+  else
+    is -s zsh ; exit
+  fi
+fi
 
 # Source Prezto.
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
