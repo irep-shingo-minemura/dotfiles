@@ -11,7 +11,7 @@
 # fi
 
 # Starship
-# eval "$(starship init zsh)"
+eval "$(starship init zsh)"
 
 # Node.js(nodenv)
 eval "$(nodenv init -)"
