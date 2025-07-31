@@ -45,9 +45,9 @@ ssh-add --apple-use-keychain ~/.ssh/id_ed25519
 export PIPENV_VENV_IN_PROJECT=1
 
 # pyenv
-if command -v pyenv 1>/dev/null 2>&1; then
-  eval "$(pyenv init -)"
-fi
+# if command -v pyenv 1>/dev/null 2>&1; then
+#   eval "$(pyenv init -)"
+# fi
 
 # MySQL
 export PATH="/usr/local/opt/mysql-client/bin:$PATH"
