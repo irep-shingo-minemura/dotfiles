@@ -51,7 +51,19 @@ brew bundle cleanup --global
 ```shell
 cd zprezto
 git pull
-git submodule update --recursive
+git submodule update --recursi```
+
+### Node.js(nodenv)の設定
+
+```shell
+# 各メジャーバージョンの安定版の一覧
+nodenv install -l
+# Node.jsのインストール
+nodenv install <バージョン>
+# グローバルバージョンの変更
+nodenv global <バージョン>
+# グローバルバージョンの確認
+nodenv global
 ```
 
 ### グローバルにインストールしたnpmパッケージのアップデート
