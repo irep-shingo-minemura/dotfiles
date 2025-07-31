@@ -1,6 +1,3 @@
-# tap "homebrew/bundle"
-# tap "homebrew/cask-fonts"
-# tap "homebrew/cask-versions"
 tap "hashicorp/tap"
 
 brew "awscli"
@@ -20,19 +17,12 @@ cask "1password"
 cask "alfred"
 cask "appcleaner"
 cask "deepl"
+cask "docker"
 cask "font-fira-code-nerd-font"
 cask "font-sauce-code-pro-nerd-font"
+cask "notion"
 cask "rectangle"
 # cask "karabiner-elements" MacOSのバグが直ったら
-# cask "raycast"
-# cask "skitch"
 cask "tableplus"
-# cask "warp"
-
-# Self Serviceでインストールしたけどその前にbrewでインストールしたから
-# これを消すとApplicationsフォルダーを消しに行こうとするから残す
-cask "docker"
-# cask "google-japanese-ime"
 cask "visual-studio-code"
 cask "zoom"
-cask "notion"
