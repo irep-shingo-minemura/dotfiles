@@ -17,7 +17,7 @@ cask "1password"
 cask "alfred"
 cask "appcleaner"
 cask "deepl"
-cask "docker"
+# cask "docker" 毎回インスールしようとするため
 cask "font-fira-code-nerd-font"
 cask "font-sauce-code-pro-nerd-font"
 cask "ghostty"
