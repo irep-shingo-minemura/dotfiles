@@ -17,13 +17,13 @@ cask "1password"
 cask "alfred"
 cask "appcleaner"
 cask "deepl"
-# cask "docker" 毎回インスールしようとするため
+cask "docker"
 cask "font-fira-code-nerd-font"
 cask "font-sauce-code-pro-nerd-font"
 cask "ghostty"
 cask "notion"
 cask "rectangle"
-# cask "karabiner-elements" MacOSのバグが直ったら
+# cask "karabiner-elements" # https://github.com/pqrs-org/Karabiner-Elements/issues/3941
 cask "tableplus"
 cask "visual-studio-code"
 cask "zoom"
