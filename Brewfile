@@ -20,6 +20,7 @@ cask "deepl"
 cask "docker"
 cask "font-fira-code-nerd-font"
 cask "font-sauce-code-pro-nerd-font"
+cask "ghostty"
 cask "notion"
 cask "rectangle"
 # cask "karabiner-elements" MacOSのバグが直ったら
