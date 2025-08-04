@@ -21,6 +21,7 @@ cask "docker"
 cask "font-fira-code-nerd-font"
 cask "font-source-han-code-jp"
 cask "ghostty"
+cask "istat-menus"
 cask "notion"
 cask "rectangle"
 # cask "karabiner-elements" # https://github.com/pqrs-org/Karabiner-Elements/issues/3941
