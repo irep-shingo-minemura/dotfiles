@@ -24,9 +24,11 @@ cask "font-source-han-code-jp"
 cask "ghostty"
 cask "istat-menus"
 cask "notion"
+cask "postman"
 cask "rancher"
 cask "rectangle"
-# cask "karabiner-elements" # https://github.com/pqrs-org/Karabiner-Elements/issues/3941
 cask "tableplus"
 cask "visual-studio-code"
 cask "zoom"
+
+# cask "karabiner-elements" # https://github.com/pqrs-org/Karabiner-Elements/issues/3941
