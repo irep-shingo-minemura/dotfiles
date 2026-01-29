@@ -42,4 +42,5 @@ Temporary Items
 # Local History for Visual Studio Code
 .history/
 
+# Claude
 **/.claude/settings.local.json
