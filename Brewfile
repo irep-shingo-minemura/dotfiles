@@ -29,6 +29,7 @@ cask "rancher"
 cask "rectangle"
 cask "tableplus"
 cask "visual-studio-code"
+cask "wezterm"
 cask "zoom"
 
 # cask "karabiner-elements" # https://github.com/pqrs-org/Karabiner-Elements/issues/3941
